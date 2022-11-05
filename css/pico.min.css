@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: sans-serif;
+}
+
+.link a{
+    color: #fff;
+    opacity: 0.5;
+    text-transform: capitalize;
+    font-size: 20px;
+   
+}
+
+.link a:hover, .link.active a{
+    opacity: 1;
+}
+
+.home-section {
+    display: flex;
+    justify-content:space-evenly;
+     align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    /* top: 0; */
+    /* opacity: 0; */
+    transition: 1s;
+}
+
+.hero-heading{
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.home-img{
+    /* position: absolute; */
+    /* top: 0;
+    right: 0; */
+    /* height: 100vh; */
+    width: 60%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+/* .home-section.active,
+.project-section.active,
+.about-section.active,
+.contact-section.active{
+    position: relative;
+    opacity: 1;
+    z-index: 8;
+} */
+
+/* project-section */
+
+.projects {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project-heading {
+    text-align: center;
+     color: #fff;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 300;
+
+}
+/* .projects img {
+  border: 3px #fff solid;
+} */
+.projects img:hover {
+  opacity: 0.5;
+  border-color: #eece1a;
+  transition: all 0.5s ease-out;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10rem;
+}
+.boxes div {
+  font-size: 2rem;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 3rem;
+  transition: all 0.5s ease-out;
+}
+.boxes div:hover {
+  padding: 0.5rem 1.5rem;
+  background: #eece1a;
+  color: #000;
+}
+.boxes div:hover span {
+  color: #000;
+}
+
+.btn, .btn-light, .btn-dark {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+}
+.btn:hover, .btn-light:hover, .btn-dark:hover {
+  background: #eece1a;
+  color: #000;
+}
+
+.btn-dark {
+  background: black;
+  color: #fff;
+}
+
+.btn-light {
+  background: #c4c4c4;
+  color: #333;
+}
+
+@media screen and (max-width: 500px) {
+ 
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+     .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
