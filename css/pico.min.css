@@ -1,45 +1,40 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-   font-family: "Roboto", sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 .navbar {
   position: fixed;
   z-index: 5;
-  
+
   width: 100%;
-  padding:0 50px 0 50px;
+  padding: 0 50px 0 50px;
   transition: all 0.3s ease;
-  
 }
 
 .navbar.sticky {
- 
-  background: rgb(17,25,31);
-  padding:0 25px 0 25px;
+  background: rgb(17, 25, 31);
+  padding: 0 25px 0 25px;
 }
 
 /* List */
 
 .navbar .menu-list {
-  display:flex;
+  display: flex;
 }
 
- .logo a img {
-
-  padding-top:10px;
-
-  
-  
+.logo a img {
+  padding-top: 10px;
 }
 
 .menu-list li a {
   color: #fff;
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -52,13 +47,12 @@ body{
 
 /* Icon */
 
-.icon  {
+.icon {
   color: #fff;
   font-size: 20px;
   cursor: pointer;
   display: none;
   padding-top: 25px;
-  
 }
 
 .icon.cancel-btn {
@@ -67,156 +61,131 @@ body{
   right: 30px;
 }
 
-
-
 /* home section */
 
 .home-section {
-  
   display: flex;
   padding-top: 100px;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   position: relative;
   flex-wrap: wrap;
   transition: 1s;
-  
 }
 
-
-
-.hero-heading{
-
-    color: #fff;
-    font-size: 50px;
-    text-transform: capitalize;
-    font-weight: 300;
+.hero-heading {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  padding-right: 50px;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
-.home-img{
-    
-    width: 60%;
-    object-fit: cover;
-    opacity: 0.2;
+.home-img {
+  width: 60%;
+  object-fit: cover;
+  opacity: 0.2;
 }
-
-
 
 /* project-section */
 
 .projects {
-
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .project-heading {
-
-    text-align: center;
-     color: #fff;
-    font-size: 40px;
-    text-transform: capitalize;
-    font-weight: 300;
-
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 300;
 }
 
 .projects img:hover {
-
   opacity: 0.5;
   border-color: #eece1a;
   transition: all 0.5s ease-out;
 }
 
-
-
-.btn, .btn-light, .btn-dark {
-
+.btn,
+.btn-light,
+.btn-dark {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
 }
-.btn:hover, .btn-light:hover, .btn-dark:hover {
-
+.btn:hover,
+.btn-light:hover,
+.btn-dark:hover {
   background: #eece1a;
   color: #000;
 }
 
 .btn-dark {
-
   background: black;
   color: #fff;
 }
 
 .btn-light {
-
   background: #c4c4c4;
   color: #333;
 }
 
 /* Resume */
 
-
-.heading{
-
-    text-align: center;
-     color: #fff;
-    font-size: 40px;
-    text-transform: capitalize;
-    font-weight: 300;
+.heading {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 300;
 }
 
-.skills{
-
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-    color: #fff;
+.skills {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  color: #fff;
 }
 
-
-
-.skill-img{
-
-    display: block;
-    margin: auto;
-    height: 200px;
+.skill-img {
+  display: block;
+  margin: auto;
+  height: 200px;
 }
 
-.skill-name{
-
-    font-size: 30px;
-    font-weight: 300;
-    text-align: center;
-    text-transform: capitalize;
-    margin: 30px 0 20px;
+.skill-name {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 30px 0 20px;
 }
 
-.skill-info{
-
-    text-align: center;
-    opacity: 0.5;
-    font-size: 18px;
-    line-height: 30px;
+.skill-info {
+  text-align: center;
+  opacity: 0.5;
+  font-size: 18px;
+  line-height: 30px;
 }
-
-
 
 @media screen and (max-width: 500px) {
- 
-
-  .projects, .skills {
+  .projects,
+  .skills {
     display: flex;
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 768px) {
-     .projects, .skills {
+  .projects,
+  .skills {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
 @media (max-width: 900px) {
@@ -233,7 +202,6 @@ body{
 
   .navbar .menu-list {
     flex-direction: column;
-    
 
     position: fixed;
     top: 0;
@@ -241,7 +209,7 @@ body{
     height: 100vh;
     width: 100%;
     max-width: 400px;
-    background: rgb(17,25,31);
+    background: rgb(17, 25, 31);
     /* display: block; */
     padding: 40px 0;
     text-align: center;
@@ -260,6 +228,3 @@ body{
     font-size: 23px;
   }
 }
-
-
-
